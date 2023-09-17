@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.booking-date-picker .ant-picker-input input {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.booking-84go-select-location > div > div {
+  border: none;
+}
+
+.booking-84go-select-location > div > div > div:nth-child(2) {
+  display: none;
+}
+
+.booking-84go-select-location > div:nth-child(2):focus-visible {
+  outline: none;
+  border: none;
+}
+
+.booking-84go-select-location div:nth-child(2) div:nth-child(3) div:first-child div:first-child {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .html-content-84-go figure {
+    width: 100% !important;
+  }
+}
+
+/* Button float phone  */
+.phone-84-go-contact {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.phone-84-go-contact .phone-84-go-trigger {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  background: #b83434;
+  color: #fff;
+  height: 55px;
+  width: 55px;
+  vertical-align: middle;
+  animation: 1.5s linear 0s infinite normal pulse;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.phone-84-go-contact {
+  position: fixed;
+  bottom: 180px;
+  right: 26px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.phone-84-go-contact .phone-84-go-trigger {
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  background: #b83434;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  vertical-align: middle;
+  animation: 1.5s linear 0s infinite normal pulse;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.phone-84-go-contact .phone-84-go-trigger:hover {
+  transform: scale(1.1);
+}
+
+.phone-84-go-contact .phone-84-go-trigger .fa::after {
+  transition: ease-in-out 1s;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 0px #ef242450;
+  }
+  30% {
+    box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 5px #ef242450;
+  }
+  70% {
+    box-shadow: 0px 1px 0px 3px #ab1a1a30, 0px 0px 0px 15px #ef242410;
+  }
+  100% {
+    box-shadow: 1px 1px 2px 1px #ab1a1a30, 0px 0px 0px 20px transparent;
+  }
+}
+
+/* Button float zalo  */
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.contact-84-go-zalo-ben-trong-nut svg path {
+  fill: #fff;
+}
+.contact-84-go-zalo-vi-tri-nut {
+  position: fixed;
+  bottom: 100px;
+  right: 26px;
+  z-index: 999;
+}
+.contact-84-go-zalo-nen-nut {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06), 0 2px 32px rgba(0, 0, 0, 0.16);
+}
+.contact-84-go-zalo-nen-nut {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  background: #0068ff;
+  border-radius: 50%;
+  position: relative;
+}
+.contact-84-go-zalo-nen-nut::after,
+.contact-84-go-zalo-nen-nut::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #0068ff;
+  background: #0068ff80;
+  z-index: -1;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+  border-radius: 50%;
+  animation: zoom 1.9s linear infinite;
+}
+.contact-84-go-zalo-nen-nut::after {
+  animation-delay: 0.4s;
+}
+.contact-84-go-zalo-ben-trong-nut {
+  transition: all 1s;
+}
+.contact-84-go-zalo-ben-trong-nut {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-84-go-zalo-nen-nut:hover i {
+  transform: scale(0.5);
+  transition: all 0.5s ease-in;
+}
+
+/* React Mutil Carousel */
+.react-multi-carousel-list {
+  z-index: 20;
+}
