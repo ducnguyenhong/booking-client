@@ -124,19 +124,12 @@ const MenuMobile = () => {
         <Divider />
         <Flex direction="column">
           {MENU_DATA.map((item) => {
-            const { route, title, icon, iconHeight, iconWidth } = item;
+            const { route, title, iconHeight, iconWidth } = item;
             const isActive = pathname === route;
             return (
               <Flex key={route} px={5} py={3} bgColor={isActive ? 'primary.2' : '#FFF'} onClick={onToggleMenu}>
                 <Link href={route} style={{ width: '100%' }}>
                   <Flex gap={1.5} align="center">
-                    <Image
-                      src={icon}
-                      alt={title}
-                      width={iconWidth}
-                      height={iconHeight}
-                      style={{ width: iconWidth, height: iconHeight }}
-                    />
                     <Text
                       as="span"
                       color={isActive ? '#FFF' : 'text.1'}

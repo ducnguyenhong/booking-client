@@ -1,4 +1,3 @@
-import { ButtonMessenger, ButtonPhone, ButtonZalo } from '@/components/button-contact';
 import ModalForgotPass from '@/components/modal-forgot-pass';
 import ModalLogin from '@/components/modal-login';
 import ModalRegister from '@/components/modal-register';
@@ -59,9 +58,9 @@ const MainLayout = ({ Component, pageProps }) => {
       <ModalRegister />
       <ModalForgotPass />
 
-      <ButtonPhone />
+      {/* <ButtonPhone />
       <ButtonZalo />
-      <ButtonMessenger />
+      <ButtonMessenger /> */}
     </div>
   );
 };

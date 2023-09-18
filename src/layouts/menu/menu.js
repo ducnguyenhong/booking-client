@@ -42,22 +42,15 @@ const Menu = () => {
       <Flex align="center" gap={7}>
         <Flex>
           {MENU_DATA.map((item) => {
-            const { route, title, icon, iconHeight, iconWidth } = item;
+            const { route, title, iconHeight, iconWidth } = item;
             const isActive = pathname === route;
             return (
               <Flex key={route} mx={5}>
                 <Link href={route}>
                   <Flex gap={1.5} align="center">
-                    <Image
-                      src={icon}
-                      alt={title}
-                      width={iconWidth}
-                      height={iconHeight}
-                      style={{ width: iconWidth, height: iconHeight }}
-                    />
                     <Text
                       as="span"
-                      color={isActive ? 'primary.2' : 'text.1'}
+                      color={'text.1'}
                       fontWeight={600}
                       _hover={{ color: 'primary.2' }}
                       transitionDuration="250ms"
